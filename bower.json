@@ -1,0 +1,30 @@
+{
+  "name": "es6-react-flip-list",
+  "description": "React flip list",
+  "main": "index.js",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "reactjs",
+    "hot",
+    "list",
+    "es6",
+    "component",
+    "flip",
+    "image",
+    "webpack"
+  ],
+  "homepage": "https://github.com/jootse84/es6-react-flip-list",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "font-awesome": "~4.5.0"
+  }
+}

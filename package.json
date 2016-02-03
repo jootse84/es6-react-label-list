@@ -1,0 +1,44 @@
+{
+  "name": "es6-react-flip-list",
+  "version": "0.0.0",
+  "description": "React flip list",
+  "scripts": {
+    "start": "node server.js",
+    "test": "mocha './components/**/*.spec.js' --compilers js:bable-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "react",
+    "reactjs",
+    "hot",
+    "list",
+    "es6",
+    "component",
+    "flip",
+    "image",
+    "webpack"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0"
+  },
+  "devDependencies": {
+    "babel-core": "^5.6.18",
+    "babel-loader": "^5.1.4",
+    "babel-plugin-react-transform": "^1.1.0",
+    "css-loader": "^0.23.1",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "node-libs-browser": "^0.5.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.9.11",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.2.0"
+  }
+}
