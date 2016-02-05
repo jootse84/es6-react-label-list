@@ -12,6 +12,7 @@
 # ignore vim swap files
 *.swp
 *.swo
+*~
 
 # dist files 
 dist/
