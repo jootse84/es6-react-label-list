@@ -1,6 +1,7 @@
 #[es6-react-label-list]
 
 React label list component
+![Screencast](./images/demo.gif)
 
 ## Prerequisites
 
