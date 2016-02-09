@@ -1,5 +1,5 @@
 import React, { Component, PropTypes } from 'react'
-import '../../styles/label.less'
+import '../styles/label.less'
 
 export default class Label extends Component {
     removeLabel () {

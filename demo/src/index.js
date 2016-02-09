@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
-import LabelList from './components/LabelList'
-import 'babel-core/polyfill'
+import LabelList from 'es6-react-label-list/lib/label-list.js'
+// import 'babel-polifyll'
 import { render } from 'react-dom'
 
 render(
