@@ -4,12 +4,11 @@ var webpack = require('webpack')
 module.exports = {
   devtool: 'source-map',
   entry: [
-    //'webpack-hot-middleware/client',
-    './index'
+    './src/index'
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
+    filename: 'demo-react-label-list.js',
     publicPath: '/static/'
   },
   plugins: [

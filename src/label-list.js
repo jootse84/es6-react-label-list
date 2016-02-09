@@ -1,6 +1,6 @@
 import React, { Component, PropTypes } from 'react'
-import Label from './Label'
-import '../styles/LabelList.less'
+import Label from './components/label'
+import '../styles/label-list.less'
 
 export default class LabelList extends Component {
     constructor (props) {
