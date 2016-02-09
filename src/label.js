@@ -7,9 +7,16 @@ export default class Label extends Component {
     }
 
     render () {
+        const ticketStyle = {
+                'background': this.props.background
+            },
+            textStyle = {
+                'color': this.props.color
+            }
+
         return (
-            <div className="ticket">
-                {this.props.text}&nbsp;
+            <div className="ticket" style={ticketStyle}>
+                <span style={textStyle}>{this.props.text}</span>&nbsp;
                 <a onClick={this.removeLabel.bind(this)}>X</a>
             </div>
         );
