@@ -1,6 +1,7 @@
-#[es6-react-label-list. React label list component]
+#[React label/tag list component]
 
 ![Screencast](./images/demo.gif)
+
 
 ## Prerequisites
 
@@ -28,11 +29,14 @@ export default MyAwesomeReactComponent;
 
 ## Customization
 
-So far there are only two optional parameters for the component customization: *color*, to set the font color of the label, and *background* , to set the background color of the label.
+So far there are only two optional parameters for the component customization: *color*, to set the font color of the label; *background* , to set the background color of the label; and *listUpdated*, a function is called any time there is an update of the label/tag list.
 
 ```js
+const printMyList = (list) => {
+    alert(list.join(', ')
+}
 const MyAwesomeReactComponent = () => (
-  <LabelList color="black" background="green" />
+  <LabelList color="black" background="green" listUpdated={printMyList}/>
 );
 ```
 

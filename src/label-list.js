@@ -29,14 +29,21 @@ export default class LabelList extends Component {
         this.setState({
             labels: arr
         })
+        if (this.props.listUpdated) {
+            this.props.listUpdated(arr)
+        }
     }
 
     removeLabel (label) {
-        this.setState({
-            labels: this.state.labels.filter(function (el) {
-                return el !== label
-            })
+        const arr = this.state.labels.filter(function (el) {
+            return el !== label
         })
+        this.setState({
+            labels: arr 
+        })
+        if (this.props.listUpdated) {
+            this.props.listUpdated(arr)
+        }
     }
 
     render () {
