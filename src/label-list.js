@@ -22,8 +22,10 @@ export default class LabelList extends Component {
 
     addLabel () {
         var arr = this.state.labels.slice()
-        this.refs.labels.value.split(',').forEach(function (el) {
-            arr.push(el.trim())
+        this.refs.labels.value.split(',').forEach((el) => {
+            if (el.trim() && arr.indexOf(el.trim()) === -1) {
+                arr.push(el.trim())
+            }
         })
         this.refs.labels.value = ''
         this.setState({
@@ -53,7 +55,7 @@ export default class LabelList extends Component {
                   type="text"
                   ref="labels"
                   placeholder="introduce your labels separated by colon, and press key enter"
-                  onKeyPress={this.handleKeyPress.bind(this)} />
+                  onKeyDown={this.handleKeyPress.bind(this)} />
                 <div className="label-list">
                     {this.state.labels.map((element, i) => {
                         return (

@@ -1,4 +1,4 @@
-#[React label/tag list component]
+#React label/tag list component
 
 ![Screencast](./images/demo.gif)
 
@@ -33,7 +33,7 @@ So far there are only two optional parameters for the component customization: *
 
 ```js
 const printMyList = (list) => {
-    alert(list.join(', ')
+    console.log(list.join(', '))
 }
 const MyAwesomeReactComponent = () => (
   <LabelList color="black" background="green" listUpdated={printMyList}/>
