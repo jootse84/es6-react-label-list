@@ -1,5 +1,4 @@
 #React label/tag list component
-[![Version][version-svg]][package-url] [![License][license-image]][license-url] [![Downloads][downloads-image]][downloads-url]
 
 
 ![Screencast](./images/demo.gif)
