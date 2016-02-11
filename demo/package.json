@@ -5,7 +5,7 @@
   "main": "./dist/index.js",
   "author": "Jose E. Martinez",
   "dependencies": {
-    "es6-react-label-list": "^1.2.0",
+    "es6-react-label-list": "^1.2.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   },

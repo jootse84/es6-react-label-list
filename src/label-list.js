@@ -49,12 +49,13 @@ export default class LabelList extends Component {
     }
 
     render () {
+        const placeholder = this.props.placeholder ? this.props.placeholder : "introduce your labels separated by comma, and press key enter"
         return (
             <div className="row">
                 <input
                   type="text"
                   ref="labels"
-                  placeholder="introduce your labels separated by colon, and press key enter"
+                  placeholder={placeholder}
                   onKeyDown={this.handleKeyPress.bind(this)} />
                 <div className="label-list">
                     {this.state.labels.map((element, i) => {
