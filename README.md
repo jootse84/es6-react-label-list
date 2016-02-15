@@ -1,6 +1,8 @@
 #React label/tag list component
 [![npm](https://img.shields.io/npm/v/es6-react-label-list.svg?style=flat-square)](https://www.npmjs.com/package/es6-react-label-list)
 
+## Demo
+
 ![Screencast](./images/demo.gif)
 
 
