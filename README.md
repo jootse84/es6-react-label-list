@@ -1,20 +1,20 @@
 #React label/tag list component
-
+[![npm](https://img.shields.io/npm/v/es6-react-label-list.svg?style=flat-square)](https://www.npmjs.com/package/es6-react-label-list)
 ![Screencast](./images/demo.gif)
 
 
-## Prerequisites
+## Dependencies
 
 [React](http://facebook.github.io/react/)
 [Less](http://lesscss.org/)
 
 ## Installation
 
-React label list component is available as an [npm package](https://www.npmjs.com/package/es6-react-label-list).
+```
+$ npm install es6-react-label-list
+```
 
 ## Usage
-
-Include es6-react-label-list in your project, you can use the component this way:
 
 ```js
 import React from 'react';
