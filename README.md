@@ -43,4 +43,7 @@ const MyAwesomeReactComponent = () => (
 );
 ```
 
+## License
+
+MIT
 
