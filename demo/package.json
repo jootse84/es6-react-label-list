@@ -1,11 +1,11 @@
 {
   "name": "demo-es6-react-label-list",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Demo with webpack for es6-react-label-list",
   "main": "./dist/index.js",
   "author": "Jose E. Martinez",
   "dependencies": {
-    "es6-react-label-list": "^1.3.0",
+    "es6-react-label-list": "^2.0.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0"
   },

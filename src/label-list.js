@@ -10,7 +10,7 @@ export default class LabelList extends Component {
         }
     }
 
-    handleKeyPress (e) {
+    keyPressHandler (e) {
         if (e.charCode == 13) {
             this.addLabel();
         } else {
@@ -49,21 +49,24 @@ export default class LabelList extends Component {
     }
 
     render () {
-        const placeholder = this.props.placeholder ? this.props.placeholder : "introduce your labels separated by comma, and press key enter"
+        const { placeholder, background, color, labelClicked } = this.props,
+              deftext = "introduce your labels separated by comma, and press key enter"
+
         return (
             <div className="row">
                 <input
                   type="text"
                   ref="labels"
-                  placeholder={placeholder}
-                  onKeyDown={this.handleKeyPress.bind(this)} />
+                  placeholder={placeholder || deftext}
+                  onKeyDown={this.keyPressHandler.bind(this)} />
                 <div className="label-list">
                     {this.state.labels.map((element, i) => {
                         return (
                             <Label
                               removeLabel={this.removeLabel.bind(this)}
-                              background={this.props.background || 'white'}
-                              color={this.props.color || 'black' }
+                              labelClicked={labelClicked}
+                              background={background || 'white'}
+                              color={color || 'black' }
                               key={'card' + i}
                               text={element} />
                         );

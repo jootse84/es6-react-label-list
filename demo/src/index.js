@@ -6,8 +6,12 @@ import { render } from 'react-dom'
 const printMyList = (list) => {
     console.log(list.join(', '))
 }
+const printLabel = (label) => {
+    console.log(label)
+}
 render(
     <LabelList 
+      labelClicked={printLabel}
       listUpdated={printMyList} 
       background="white" 
       color="#990000" />,

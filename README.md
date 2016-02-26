@@ -32,14 +32,17 @@ export default MyAwesomeReactComponent;
 
 ## Customization
 
-So far there are only these optional parameters for the component customization: *color*, to set the font color of the label; *background* , to set the background color of the label; *listUpdated*, a function is called any time there is an update of the label/tag list; and *placeholder* as the initial input text.
+So far there are only these optional parameters for the component customization: *color*, to set the font color of the label; *background* , to set the background color of the label; *listUpdated*, a function is called any time there is an update of the label/tag list; *placeholder* as the initial input text; and *labelClicked*, a function is called any time user clicks on the label name.
 
 ```js
 const printMyList = (list) => {
     console.log(list.join(', '))
 }
+const printLabel = (label) => {
+    console.log(label)
+}
 const MyAwesomeReactComponent = () => (
-  <LabelList color="black" background="green" listUpdated={printMyList}/>
+  <LabelList color="black" background="green" listUpdated={printMyList} labelClicked={printLabel}/>
 );
 ```
 
