@@ -62,8 +62,8 @@ export default class LabelList extends Component {
                         return (
                             <Label
                               removeLabel={this.removeLabel.bind(this)}
-                              background={this.props.background || '#8dc63f'}
-                              color={this.props.color || 'black'}
+                              background={this.props.background || 'white'}
+                              color={this.props.color || 'black' }
                               key={'card' + i}
                               text={element} />
                         );

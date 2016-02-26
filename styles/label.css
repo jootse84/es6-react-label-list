@@ -1,0 +1,37 @@
+.ticket {
+    font-family: sans-serif;
+    font-size: 15px;
+    float: left;
+    margin: 10px 5px 5px 0;
+    border: solid 1px;
+}
+
+.ticket {
+    border: solid 1px;
+    display: inline-block;
+    /*line-height: 1;*/
+    border-radius: 3px;
+    /*margin-right: -5px;*/
+}
+
+.ticket > * {
+    padding: 0 10px;
+    border-radius: 3px 0 0 3px;
+}
+.ticket > *:last-child {
+    padding: 0 5px;
+    border-radius: 0 3px 3px 0;
+}
+.ticket > *:not(:first-child) {
+
+    border-left: solid 1px;
+}
+
+.ticket > *:hover {
+    display: inline-block;
+    cursor: pointer;
+    /*line-height: 1;*/
+    /*border-radius: 3px;*/
+    /*font-weight: bold;*/
+}
+
