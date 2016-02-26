@@ -7,6 +7,9 @@ const printMyList = (list) => {
     console.log(list.join(', '))
 }
 render(
-    <LabelList listUpdated={printMyList} />,
+    <LabelList 
+      listUpdated={printMyList} 
+      background="white" 
+      color="#990000" />,
     document.getElementById('root')
 )
